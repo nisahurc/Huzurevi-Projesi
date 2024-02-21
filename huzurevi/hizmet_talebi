@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yardım Talebi Oluştur</title>
+    <style>
+        /* Genel sayfa stil özellikleri */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #62666c27;
+            background-size: cover;
+            background-position: center;
+            color: #333; /* Yazı rengini koyu gri yap */
+        }
+
+        /* Container stil özellikleri */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header stil özellikleri */
+        header {
+            background-color: rgba(255, 255, 255, 0.7); /* Yarı saydam beyaz arka plan */
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 0; /* Üstteki boşluğu kaldır */
+        }
+
+        /* Başlık stil özellikleri */
+        header h1 {
+            margin: 0;
+            color: #333; /* Başlık rengini koyu gri yap */
+        }
+
+        /* Menü stil özellikleri */
+        nav {
+            text-align: center;
+            margin-top: 25px; /* Butonların üstündeki boşluğu ayarlayın */
+        }
+
+        nav a {
+            color: #333; /* Buton rengini koyu gri yap */
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: rgba(56, 53, 53, 0.5); /* Buton arka planını yarı saydam beyaz yap */
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.7); /* Buton üzerine gelindiğinde arka plan rengini daha açık yap */
+        }
+
+        /* Form stil özellikleri */
+        form {
+            background-color: #f2f2f2; /* Açık gri arka plan */
+            border-radius: 10px; /* Köşeleri yumuşat */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Hafif bir gölgelendirme */
+            padding: 20px;
+            margin-top: 15px;
+            text-align: center; /* Formu ortala */
+        }
+
+        /* Form etiketleri stil özellikleri */
+        label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left; /* Etiketleri sola yasla */
+            color: #333; /* Gri renk */
+        }
+
+        /* Form giriş alanı stil özellikleri */
+        input,
+        select {
+            width: calc(100% - 10px); /* Genişliği kenar boşlukları dahil olacak şekilde ayarla */
+            padding: 10px; /* Daha belirgin içerik */
+            margin: 5px; /* Daha kompakt bir görünüm */
+            border: 1px solid #ccc; /* Gri kenarlık */
+            border-radius: 5px;
+            background-color: #fff; /* Beyaz arka plan */
+            color: #333; /* Gri renk */
+            box-sizing: border-box; /* Padding'i genişlik hesabından çıkar */
+        }
+
+        /* Buton stil özellikleri */
+        button {
+            padding: 10px 20px;
+            background-color: #666; /* Griye yakın koyu bir arka plan */
+            color: #fff; /* Beyaz renk */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Daha pürüzsüz bir geçiş */
+        }
+
+        button:hover {
+            background-color: #444; /* Üzerine gelindiğinde biraz daha koyulaşsın */
+        }
+
+        /* Footer stil özellikleri */
+        footer {
+            background-color: rgba(255, 255, 255, 0.7); /* Yarı saydam beyaz arka plan */
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 15px; /* Üstteki boşluğu ayarla */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header bölümü -->
+    <header>
+        <div class="container">
+            <h1>Hizmet Talebi Oluştur</h1>
+            <!-- Menü -->
+            <nav>
+                <a href="anasayfa.html">Anasayfa</a>
+                <a href="profil.html">Profil</a>
+                <a href="yardım.html">Yardım</a>
+                <a href="hakkımızda.html">Hakkımızda</a>
+                <a href="iletişim.html">İletişim</a>
+                <a href="bagis.html">Bağış Yap</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Ana içerik bölümü -->
+    <div class="container">
+        <!-- Form bölümü -->
+        <form>
+            <!-- Hizmet Türü -->
+            <label for="serviceType">Hizmet Türü:</label>
+            <input type="text" id="serviceType" name="serviceType" required>
+
+            <!-- Hizmet Türü Açıklama -->
+            <label for="serviceTypeDescription">Hizmet Türü ile İlgili Açıklama:</label>
+            <input type="text" name="serviceTypeDescription" required="" style="width: 100%; height: 84px;">
+
+            <!-- Ücret -->
+            <label for="fee">Ücret (TL):</label>
+            <input type="number" id="fee" name="fee" required>
+
+            <!-- Adres -->
+            <label for="address">Adres:</label>
+            <input type="text" id="address" name="address" required>
+
+            <!-- Evinizde Evcil Hayvan Var mı? -->
+            <label for="hasPet">Evinizde Evcil Hayvan Var mı?</label>
+            <select id="hasPet" name="hasPet" required>
+                <option value="yes">Evet</option>
+                <option value="no">Hayır</option>
+            </select>
+
+            <!-- Eğer Var İse, Evcil Hayvanınızın Türü -->
+            <label for="petDescription">Eğer Var İse, Evcil Hayvanınızın Türü:</label>
+            <input type="text" id="petDescription" name="petDescription">
+
+            <!-- Talep Oluştur Butonu -->
+            <button type="submit">Talep Oluştur</button>
+        </form>
+    </div>
+
+    <!-- Footer bölümü -->
+    <footer>
+        <div class="container">
+            <p>&copy; Yardım Talep Platformu</p>
+        </div>
+    </footer>
+</body>
+</html>

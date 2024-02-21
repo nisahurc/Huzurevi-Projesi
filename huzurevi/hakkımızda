@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <style>
+        /* Genel sayfa stilleri */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff; /* Arka plan rengi beyaz */
+        }
+
+        /* Sayfa konteynerı */
+        .container {
+            width: 80%;
+            margin: 0 auto; /* Sayfayı ortala */
+            padding-left: 20px; /* Sol boşluk */
+            padding-right: 20px; /* Sağ boşluk */
+        }
+
+        /* Başlık ve navigasyon menüsü stilleri */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* "Hakkımızda" bölümü stilleri */
+        .about {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 24px; /* Başlık font boyutu */
+            margin-bottom: 20px; /* Başlık alt boşluk */
+            position: relative; /* Çizgi için başlık ile ilişkilendirme */
+        }
+
+        .container h2::after {
+            content: '';
+            position: absolute;
+            left: 0; /* Çizginin sol kenarı */
+            right: 0; /* Çizginin sağ kenarı */
+            bottom: -10px; /* Başlık ile çizgi arasındaki mesafe */
+            margin: 0 auto; /* Çizgiyi ortala */
+            width: 80%; /* Çizgi genişliği */
+            height: 2px; /* Çizgi yüksekliği */
+            background-color: #ccc; /* Gri çizgi rengi */
+        }
+
+        .container p {
+            font-size: 16px; /* Paragraf font boyutu */
+            line-height: 1.6; /* Satır yüksekliği */
+            text-align: left; /* Paragrafları sola hizala */
+        }
+
+        /* Alt bilgi stilleri */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px; /* Footer'ın üstündeki boşluk */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sayfa başlığı ve navigasyon menüsü -->
+<header>
+    <h1>YAŞAM KÖPRÜSÜ</h1>
+    <nav>
+        <ul>
+            <li><a href="anasayfa.html">Ana Sayfa</a></li>
+            <li><a href="hizmet_talebi.html">Hizmet Talebi</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="profil.html">Profilim</a></li>
+            <li><a href="bagıs.html">Bağış Yap</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- "Hakkımızda" bölümü -->
+<section class="about">
+    <div class="container">
+        <h2>Biz Kimiz?</h2>
+        <!-- "Hakkımızda" açıklaması -->
+        <p>El Ele Daha Güzeliz. Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi'nde öğrenim gören gönüllü öğrencilerimiz, GDSC Google Development gruplarında bir araya gelerek iş birliği yapmaktadır. Bu dayanışma, projelerde birlikte çalışarak değerli katkılarda bulunmamıza olanak tanıyor. Sayfamızın oluşturulmasında emeği geçen GDSC ve takım arkadaşlarımıza teşekkür ederiz.
+             Projemiz, dünya genelinde yaygınlaşan yaşlıların yalnızlık sorununa odaklanmanın yanı sıra, gençlere de destek sunmayı amaçlamaktadır. Yaş grupları arasındaki köprüyü kurarak, toplumsal dayanışmanın gücünü kullanmayı hedefliyoruz. Bu çabalarımızın sonucunda, genel sorunların azalması ve toplumun daha sağlıklı bir şekilde gelişmesi için çalışıyoruz. 
+             Böylece, toplumun refahını artırarak genel sorunları azaltma hedefimiz doğrultusunda ilerliyoruz.</p>
+        <p>Sitemiz; yaş, coğrafya veya kültür farkı gözetmeksizin, dünyanın her yerindeki insanlara dokunmayı hedeflemekte ve bu amacı, sizin istikrarlı kullanımınız ve katılımınızla gerçekleştirebileceğimize inanmaktayız. Projemize katkı sağlamak ve birlikte daha fazla insana ulaşmak için yanımızda olmanızdan büyük memnuniyet duyarız.</p>
+        <!-- Ekip üyeleri -->
+
+        <h2>Ekip Üyeleri</h2>
+        <p>Rim AKYÜZ</p>
+        <p>Sıla ÇELİK</p>
+        <p>Nisa HURÇ</p>
+    </div>
+</section>
+
+<div class=""image-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFgh388emk0crGo6C2fJxUvS9FPRGOfaYmVb6zhBjNDQkFHV8FwBkZprBhFmL6IqF6kek&usqp=CAU"
+    alt="you can find us in Linkedln"
+</div>
+
+<!-- Sayfa alt bilgisi -->
+<footer>
+    <p>&copy; 2024 ATÜ GDSC. Tüm hakları saklıdır.</p>
+</footer>
+
+</body>
+</html>

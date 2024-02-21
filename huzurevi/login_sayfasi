@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* Temel stil ayarları */
+        body {
+            /* Sayfayı dikey ve yatayda ortalar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Sayfanın en azı ekran yüksekliği kadar olacak */
+            /* Arka plan resmini ayarla */
+            background: url('https://st5.depositphotos.com/1192060/65188/i/600/depositphotos_651880456-stock-photo-senior-father-wheelchair-son-tablet.jpg') no-repeat;
+            background-size: cover; /* Resmi kapla */
+            background-position: center; /* Resmi ortala */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* Form kutusu stil ayarları */
+        .wrapper {
+            width: 400px; /* Formun genişliği */
+            height: 400px; /* Formun yüksekliği */
+            background: linear-gradient(to right, rgba(43, 63, 165, 0.533)); /* Gradient arka plan */
+            backdrop-filter: blur(30px); /* Arka planı hafif bulanıklaştır */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.661); /* Kutuyu gölgele */
+            color: #272323; /* Yazı rengi */
+            border-radius: 25px; /* Kenar yuvarlatma */
+            padding: 60px; /* İç kenar boşluğu */
+            border-width: 10px; /* Sınır kalınlığı */
+            margin-right: 30px; /* Sağdan boşluk */
+        }
+
+        /* Başlık stil ayarları */
+        .wrapper h1 {
+            font-size: 36px; /* Başlık font boyutu */
+            text-align: center; /* Başlık ortala */
+        }
+
+        /* Giriş kutuları stil ayarları */
+        .input-box {
+            position: relative;
+            width: 90%;
+            margin-bottom: 20px; /* Giriş kutuları arası boşluk */
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 40px; /* Giriş kutusu yüksekliği */
+            background: transparent; /* Arka planı saydam yap */
+            border: 2px solid rgba(1, 0, 14, 0.2); /* Kenar çizgisi */
+            border-radius: 20px; /* Kenar yuvarlatma */
+            font-size: 18px; /* Yazı font boyutu */
+            color: rgba(1, 4, 24, 0.2); /* Yazı rengi */
+            padding: 16px; /* İç kenar boşluğu */
+            outline: none; /* Odaklandığında çerçeve oluşturma */
+        }
+
+        .input-box input::placeholder {
+            font-size: 24px; /* Placeholder font boyutu */
+            color: rgb(0, 13, 13); /* Placeholder rengi */
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+        }
+
+        /* Unutulan şifre ve Beni hatırla stil ayarları */
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px; /* Yazı font boyutu */
+            margin: -10px 0 10px; /* Yazılar arası boşluk */
+        }
+
+        .remember-forgot label input {
+            accent-color: #fff;
+            margin-right: 3px;
+        }
+
+        .remember-forgot a {
+            font-size: 16px; /* Yazı font boyutu */
+            color: #fff; /* Yazı rengi */
+            text-decoration: none; /* Alt çizgiyi kaldır */
+        }
+
+        .remember-forgot a:hover {
+            text-decoration: underline; /* Üzerine gelince alt çizgi */
+        }
+
+        /* Giriş butonu stil ayarları */
+        .btn {
+            width: 100%;
+            height: 40px; /* Buton yüksekliği */
+            background: #343735; /* Arka plan rengi */
+            border: none; /* Kenar çizgisi yok */
+            outline: none; /* Odaklandığında çerçeve oluşturma */
+            border-radius: 20px; /* Kenar yuvarlatma */
+            box-shadow: 0 0 10px rgba(96, 6, 6, 0.1); /* Kutuyu gölgele */
+            cursor: pointer;
+            font-size: 18px; /* Yazı font boyutu */
+            color: black; /* Yazı rengi */
+            font-weight: 600; /* Kalınlık */
+        }
+
+        /* Kayıt linki stil ayarları */
+        .register-link {
+            font-size: 16px; /* Yazı font boyutu */
+            text-align: center; /* Ortala */
+            margin: 20px 0; /* Kenar boşluğu */
+        }
+
+        .register-link p a {
+            font-size: 18px; /* Yazı font boyutu */
+            color: #0c0b0b; /* Yazı rengi */
+            text-decoration: none; /* Alt çizgiyi kaldır */
+            font-weight: 600; /* Kalınlık */
+        }
+
+        .register-link p a:hover {
+            text-decoration: underline; /* Üzerine gelince alt çizgi */
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <form action="">
+        <h1>Login</h1>
+        <!-- Kullanıcı adı giriş kutusu -->
+        <div class="input-box">
+            <input type="text" placeholder="Username" required>
+            <i class='bx bxs-user'></i> <!-- Kullanıcı simgesi -->
+        </div>
+        <!-- Şifre giriş kutusu -->
+        <div class="input-box">
+            <input type="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt'></i> <!-- Kilit simgesi -->
+        </div>
+
+        <!-- Beni hatırla ve şifremi unuttum linkleri -->
+        <div class="remember-forgot">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="change-password.html">Forgot password?</a>
+        </div>
+
+        <!-- Giriş butonu -->
+        <button type="submit" class="btn">Login</button>
+
+        <!-- Kayıt linki -->
+        <div class="register-link">
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
